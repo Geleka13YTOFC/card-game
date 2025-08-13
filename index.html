@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de dinheiro para jogos</title>
+</head>
+<body>
+    <h1>Sistema de dinheiro para jogos</h1>
+    <div id="divv">
+        <input id="Player1" type="text" placeholder="Nome do 1º jogador">
+        <p id="dindin"></p>
+    </div>
+    <div id="divv">
+        <input id="Player2" type="text" placeholder="Nome do 2º jogador">
+        <p id="dindindin"></p>
+    </div>
+    <div id="divv">
+        <input id="Player3" type="text" placeholder="Nome do 3º jogador">
+        <p id="dindindindin"></p>
+    </div>
+    <div id="divv">
+        <input id="Player4" type="text" placeholder="Nome do 4º jogador">
+        <p id="dindindindindin"></p>
+    </div>
+
+<!--botão -|  -->
+<!--       V  -->
+        <p style="font-size: 15px;">Qual(is) player(s) irá(ão) receber ou perder?</p>
+        <select id="quem">
+            <option id="player1option" value="Player1">Player 1</option>
+            <option id="player2option" value="Player2">Player 2</option>
+            <option id="player3option" value="Player3">Player 3</option>
+            <option id="player4option" value="Player4">Player 4</option>
+            <option value="Todos">Todos</option>
+        </select>
+        <p style="font-size: 15px;">Quanto?</p>
+        <input type="number" id="quanto" placeholder="Número" min="0">
+
+        <button id="dinheiro" onclick="ganhar()">💸GANHAR💸</button>
+        <button id="dinheiro2" onclick="perder()">📉PERDER📉</button>
+        <button id="dinheiro3" onclick="alterar()">🔄ALTERAR🔄</button>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
